@@ -15,3 +15,4 @@
 * [13.Flask-原生方法上传文件](https://github.com/SingleDiego/Flask-Notes/blob/main/docs/13.Flask-%E5%8E%9F%E7%94%9F%E6%96%B9%E6%B3%95%E4%B8%8A%E4%BC%A0%E6%96%87%E4%BB%B6.md)
 * [14.flask_uploads](https://github.com/SingleDiego/Flask-Notes/blob/main/docs/14.flask_uploads.md)
 * [15.flask-工厂函数](https://github.com/SingleDiego/Flask-Notes/blob/main/docs/15.flask-%E5%B7%A5%E5%8E%82%E5%87%BD%E6%95%B0.md)
+* [16.上下文处理器 context_processor](https://github.com/SingleDiego/Flask-Notes/blob/main/docs/16.%E4%B8%8A%E4%B8%8B%E6%96%87%E5%A4%84%E7%90%86%E5%99%A8%20context_processor.md)
