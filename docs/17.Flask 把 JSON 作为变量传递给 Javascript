@@ -1,0 +1,41 @@
+# Flask 把 JSON 作为变量传递给 Javascript
+
+原文：[python - Passing a JSON object from Flask to JavaScript - Stack Overflow](https://stackoverflow.com/questions/42499535/passing-a-json-object-from-flask-to-javascript)
+
+本文实现把参数以 JSON 的形式，从视图函数传递到模板文件，在模板文件中，利用 Javascript 来读取传来的参数，并用 Javascript 的对象形式来使用该参数。
+
+要使用该功能我们利用 Jinja2 模板引擎的 ``tojson()`` 过滤器来实现，详细使用方法见 [官方文档](https://stackoverflow.com/questions/42499535/passing-a-json-object-from-flask-to-javascript)。
+
+例子：
+```
+# view.py
+
+from flask import Flask, render_template
+
+app = Flask(__name__)
+
+@app.route('/')
+def hello_world():
+    user = {'firstname': "Mr.", 'lastname': "My Father's Son"}
+    return render_template("index.html", user=user)
+
+if __name__ == '__main__':
+    app.run()
+```
+
+```
+# index.html
+
+<p>Hello, <span id="username"></span></p>
+<script>
+    var user = JSON.parse('{{ user | tojson | safe}}');
+    document.getElementById('username').innerHTML = user.firstname + " " +
+            user.lastname;
+</script>
+```
+
+现在，我们可以直接在 Javascript 使用变量 ``user``:
+```
+user
+{firstname: 'Mr.', lastname: "My Father's Son"}
+```
