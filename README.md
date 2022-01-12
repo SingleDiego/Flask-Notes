@@ -16,3 +16,4 @@
 * [14.flask_uploads](https://github.com/SingleDiego/Flask-Notes/blob/main/docs/14.flask_uploads.md)
 * [15.flask-工厂函数](https://github.com/SingleDiego/Flask-Notes/blob/main/docs/15.flask-%E5%B7%A5%E5%8E%82%E5%87%BD%E6%95%B0.md)
 * [16.上下文处理器 context_processor](https://github.com/SingleDiego/Flask-Notes/blob/main/docs/16.%E4%B8%8A%E4%B8%8B%E6%96%87%E5%A4%84%E7%90%86%E5%99%A8%20context_processor.md)
+* [17.Flask 把 JSON 作为变量传递给 Javascript](https://github.com/SingleDiego/Flask-Notes/blob/main/docs/17.Flask%20%E6%8A%8A%20JSON%20%E4%BD%9C%E4%B8%BA%E5%8F%98%E9%87%8F%E4%BC%A0%E9%80%92%E7%BB%99%20Javascript.md)
